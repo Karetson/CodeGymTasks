@@ -2,6 +2,7 @@ package pl.codegym.task.task07.task0717;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.nio.Buffer;
 import java.util.ArrayList;
 
@@ -15,7 +16,7 @@ public class Solution {
         ArrayList<String> lista = new ArrayList<String>();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
             lista.add(reader.readLine());
         }
 
@@ -29,9 +30,13 @@ public class Solution {
 
     public static ArrayList<String> doubleValues(ArrayList<String> lista) {
         //tutaj wpisz swój kod
-        for (int i = 0; i < 5; i++) {
+        ArrayList<String> listaTemp = new ArrayList<String>();
 
-        }
-        return lista;
+        for (int i = 0; i < lista.size(); i++) {
+                String temp = lista.get(i);
+                listaTemp.add(lista.get(i));
+                listaTemp.add(i + i, temp);
+            }
+        return listaTemp;
     }
 }
