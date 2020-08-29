@@ -54,7 +54,7 @@ public class Solution {
 
         @Override
         public String toString() {
-            return "Imie kota: " + imie + ", wiek: " + wiek + ", waga: " + waga + ", ogon: " + dlugoscOgona;
+            return "Imię kota: " + imie + ", wiek: " + wiek + ", waga: " + waga + ", ogon: " + dlugoscOgona;
         }
     }
 }
