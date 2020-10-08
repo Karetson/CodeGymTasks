@@ -26,12 +26,14 @@ public class Solution {
 
     public static void reset() throws IOException {
         //tutaj wpisz swój kod
-        BufferedReader reader = new BufferedReader(new BufferedReader(new InputStreamReader(System.in)));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String s = reader.readLine();
 
         if (s.equals("helikopter")) {
             result = new Helicopter();
-        } else if (s.equals("samolot")) {
+        }
+
+        if (s.equals("samolot")) {
             int passengers = Integer.parseInt(reader.readLine());
             result = new Plane(passengers);
         }
