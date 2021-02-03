@@ -11,6 +11,3 @@ All tasks are marked with the level of difficulty - Easy, Medium and Hard. <br /
 - interfaces, enums, abstract classes;
 - type conversion;
 - tasks with files;
-
-#### Latest update of learned information:
-29.01.2021
